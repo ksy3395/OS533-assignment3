@@ -1,2 +1,6 @@
 Answers for questions
 1. 
+If a thread makes an asynchronous call to only read a file we still have memory invariance.
+However if the asynchronous call is made to both read and write the data then it is possible to lose memory invariance as the memory write 
+can manipulate the same data that the other thread is using.
+
